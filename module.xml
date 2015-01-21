@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+<name>Net2Ftp FileManager</name>
+<version>100</version>
+<type>user</type>
+<defaultcat>File Management</defaultcat>
+<desc>Net2Ftp modules allows you to connect to your FTP and manage files on broswer.</desc>
+<authorname>JD1pinoy</authorname>
+<authoremail>jd1pinoy@gmx.ph</authoremail>
+<authorurl>http://dossierbox.cu.cc</authorurl>
+<updateurl></updateurl>
+</module>
