@@ -1,0 +1,107 @@
+<?php
+#########################################################
+#	Net2Ftp Module extension for Sentora and Zpanel		#
+#	Module by: JD1pinoy | Email: jd1pinoy@gmx.ph		#
+#########################################################
+
+#Set temporary path here
+$tmp = '/net2ftp_main :- ';
+
+function copyFolderContents($src, $dest) {
+	$path = realpath($src);
+	$objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
+
+	foreach($objects as $name => $object)
+	{
+		$startsAt = substr(dirname($name), strlen($src));
+		mkNewDir($dest.$startsAt);
+		if(is_writable($dest.$startsAt) and $object->isFile())
+		{
+			copy((string)$name, $dest.$startsAt.DIRECTORY_SEPARATOR.basename($name));
+			chmod($dest.$startsAt.DIRECTORY_SEPARATOR.basename($name), 0777);
+		}
+	}
+}
+
+function mkNewDir($folder) {
+	if(!is_dir($folder)) {
+		mkdir($folder, 0777);
+		chmod($folder, 0777);
+	}
+}
+
+function removeDirectoryContents($directory)
+{
+	// set the directory slash implementation for Windows if required.
+	if (sys_versions::ShowOSPlatformVersion() == "Windows")
+		$l = '\\';
+	else
+		$l = '/';
+	$files = dir($directory);
+	while ($file = $files->read())
+	{
+		if ($file != '.' && $file != '..')
+		{			
+			if (is_dir($directory.$file))
+				removeDirectoryContents($directory.$file.$l);
+			else
+				unlink($directory.$file);
+		}
+	}
+	$files->close();
+}
+// determine ZPanel root directory
+$currentDir = rtrim(dirname(__FILE__), '/\\');
+$folders = explode('/', $currentDir);
+$zpanelRoot = '';
+$i = 0;
+while ($folders[$i] != 'modules') {
+	$zpanelRoot .= $folders[$i].'/';
+	$i++;
+}
+
+//require_once $zpanelRoot.'dryden/loader.inc.php';
+//require_once $zpanelRoot.'cnf/db.php';
+//require_once $zpanelRoot.'inc/dbc.inc.php';
+//require_once $zpanelRoot.'dryden/db/driver.class.php';
+//require_once $zpanelRoot.'dryden/ctrl/options.class.php';
+//require_once $zpanelRoot.'dryden/sys/versions.class.php';
+
+// Move files, Windows?
+if (sys_versions::ShowOSPlatformVersion() == "Windows")
+{
+	$l = '\\';
+}
+else
+{
+	$l = '/';	
+}
+
+// set the source and destination
+$src = $zpanelRoot.'modules'.$l.'net2ftp-filemanager'.$l.'install_net2ftp'.$l;
+$dst = $zpanelRoot.'modules'.$l.'net2ftp-filemanager'.$l.'net2ftp_main'.$l;
+// create the destination folder
+error_log($tmp.'Creating '.$dst);
+mkdir($dst, 0777);
+chmod($dst, 0777);
+chmod($src, 0777);
+// copy the src files to /modules/module_name/path
+error_log($tmp.'Moving src files to '.$dst);
+copyFolderContents($src, $dst);
+// remove the App files that were just copied
+removeDirectoryContents($src);
+
+//$output = shell_exec('mkdir /etc/zpanel/panel/modules/support_ticket2/hesk/_delete_me');
+//echo "Creating directory temp folder, please wait.\n";
+//sleep(2);
+//$output = shell_exec('chmod 777 -R /etc/zpanel/panel/modules/support_ticket2/hesk/_delete_me');
+//echo "Setting up folder permission to temp folder.\n";
+sleep(2);
+$output = shell_exec('rm -r -f /etc/zpanel/panel/modules/net2ftp-filemanager/install_net2ftp');
+echo "Cleaning up temp files, please wait....\n";
+sleep(3);
+echo "Installation complete! You may now enable the module.\n";
+/*
+| End of File: install.run
+*/
+?>	
