@@ -15,3 +15,10 @@ Sentora copyrights.
   2) settings_authorizations.inc.php<br>
   3) settings_screens.inc.php</p>
 <p>Please see also Net2Ftp README file for more setting options</p>
+<hr>
+<p>To add this module in your Sentora for a test, use the following<br>
+  <br></p>
+  <pre>zppy repo add dossierbox.cu.cc/filebox/zpp</pre>
+  <pre>zppy update</pre>
+  <pre>zppy install net2ftp-filemanager</pre>
+
