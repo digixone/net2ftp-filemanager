@@ -57,7 +57,7 @@ $net2ftp_settings["admin_password"] = "";
 // Message on Browse screen
 // ----------------------------------------------------------------------------------
 
-$net2ftp_settings["message_browse"] = "";
+$net2ftp_settings["message_browse"] = 'Welcome to Sentora Net2Ftp File Manager! 3rd party File Manager module for Sentora CP<br />Contact Module Developer - email: jd1pinoy@gmx.ph';
 
 
 // ----------------------------------------------------------------------------------
