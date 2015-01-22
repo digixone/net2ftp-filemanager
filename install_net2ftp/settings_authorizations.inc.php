@@ -32,8 +32,8 @@ $net2ftp_settings["check_authorization"] = "yes";
 //    - if more than 1 entry is entered, then the FTP server will have to be chosen from a drop-down list
 // ----------------------------------------------------------------------------------
 
-//$net2ftp_settings["allowed_ftpservers"][1] = "ALL";
-$net2ftp_settings["allowed_ftpservers"][1] = "localhost";
+$net2ftp_settings["allowed_ftpservers"][1] = "ALL";
+//$net2ftp_settings["allowed_ftpservers"][1] = "localhost";
 //$net2ftp_settings["allowed_ftpservers"][2] = "192.168.1.1";
 //$net2ftp_settings["allowed_ftpservers"][3] = "ftp.mydomain2.org";
 

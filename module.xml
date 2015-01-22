@@ -4,7 +4,7 @@
 <version>100</version>
 <type>user</type>
 <defaultcat>File Management</defaultcat>
-<desc>Net2Ftp module allows you to connect to your FTP and manage files on broswer.</desc>
+<desc>Net2Ftp module allows you to connect to your FTP and manage files on browser.</desc>
 <authorname>JD1pinoy</authorname>
 <authoremail>jd1pinoy@gmx.ph</authoremail>
 <authorurl>http://dossierbox.cu.cc</authorurl>
