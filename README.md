@@ -1,6 +1,7 @@
 # net2ftp-filemanager
 
   Net2Ftp modules allows you to connect to your FTP and manage files on broswer.
+  Version 0.1
 <br>
 <p>This module is still on Alpha test and it is not fully integrated to Sentora or ZPanel panel.<br>
 Feel free to part or modify this for your personal settings and view as long as you don't<br>
