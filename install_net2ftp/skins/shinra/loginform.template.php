@@ -124,6 +124,7 @@
 <script type="text/javascript"><!--
 	document.forms['LoginForm1'].<?php echo $focus; ?>.focus();
 //--></script>
+<!--ADDED SCRIPT FOR Close Window-->
 <script>
 function close_window() {
   if (confirm("Close Window?")) {
