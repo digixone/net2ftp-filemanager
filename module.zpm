@@ -11,7 +11,19 @@
     </div>
 
 <div class="net2ftp-desc"><h2>NET2FTP and FTP Accounts</h2></div>
-<div class="net2ftp-button"><button class="button btn btn-default" id="btn_sh" onclick="window.open('/modules/net2ftp-filemanager/net2ftp_main/')">Launch Net2FTP</div>
+<!--<div class="net2ftp-button"><button class="button-loader btn btn-primary" id="btn_sh" onclick="window.open('/modules/net2ftp-filemanager/net2ftp_main/')"><: Launch Net2FTP :></div>-->
+<button class="fg-button ui-state-default ui-corner-all" type="submit" id="jd1pinoy-net2ftp"><: Launch Net2Ftp :></button>
+<script>
+function init() {
+	document.getElementById('jd1pinoy-net2ftp').onclick=function()
+	{
+		ZPanel_AjaXplorer = window.open('/modules/net2ftp-filemanager/net2ftp_main/index.php');
+	};	
+}
+
+window.onload=init;
+
+</script>
 <br />
 <p>Launch Net2Ftp file management, make sure you have setup the right FTP account for your domain name.</p>
 <br />
