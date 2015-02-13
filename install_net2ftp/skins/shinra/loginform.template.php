@@ -35,7 +35,7 @@
 											<input type="password" name="password" value="<?php echo $password; ?>" class="form-poshytip" title="Enter your password" />
 										</div>
 <?php /* ----- Login button ----- */ ?>
-										<input type="submit" id="LoginButton1" name="Login" value="<?php echo __("Login"); ?>" alt="<?php echo __("Login"); ?>" />
+										<input type="submit" id="LoginButton1" name="Login" value="<?php echo __("Login"); ?>" alt="<?php echo __("Login"); ?>" /> | <input type="submit" id="LoginButton1" name="Login" a href="#" onclick="close_window();return false;" value="Close" />
 									</fieldset>
 									<input type="hidden" name="state"     value="browse" />
 									<input type="hidden" name="state2"    value="main" />
@@ -117,10 +117,17 @@
 									</fieldset>
 									<input type="hidden" name="state"     value="browse" />
 									<input type="hidden" name="state2"    value="main" />
-								</form>
+								</form> 
 							</div>
 						</div>
 
 <script type="text/javascript"><!--
 	document.forms['LoginForm1'].<?php echo $focus; ?>.focus();
 //--></script>
+<script>
+function close_window() {
+  if (confirm("Close Window?")) {
+    close();
+  }
+}
+</script>
