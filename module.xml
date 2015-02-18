@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <module>
 <name>Net2Ftp FileManager</name>
-<version>100</version>
+<version>110</version>
 <type>user</type>
 <defaultcat>File Management</defaultcat>
 <desc>Net2Ftp module allows you to connect to your FTP and manage files on browser.</desc>
