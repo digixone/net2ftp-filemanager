@@ -3,11 +3,12 @@
   Net2Ftp modules allows you to connect to your FTP and manage files on broswer.
   Version 0.1
 <br>
-<p>This module is still on Alpha test and it is not fully integrated to Sentora or ZPanel panel.<br>
+The module uses the latest stable Net2Ftp full version 1.0 that contains all plugins. Version 1.0 is released in March 2013.
+<br>
+<p><strong>TAKE NOTE:</strong> module is still in Alpha test and it is not fully integrated to Sentora or ZPanel panel.<br>
 Feel free to part or modify this for your personal settings and view as long as you don't<br>
-break any Sentora codes inside module. Also take note,<br>
-Take Note: Kindly leave the Net2Ftp and   
-Sentora copyrights.
+break any Sentora codes inside module.<br>
+REMINDER: Kindly leave the Net2Ftp and Sentora copyrights.
 </p>
 <p>Configuration of Net2Ftp:</p>
 <p>You need to set the configuration of Net2Ftp manually that will suit your needs.</p>
