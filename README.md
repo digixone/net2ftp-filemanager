@@ -12,9 +12,10 @@ Sentora copyrights.
 <p>Configuration of Net2Ftp:</p>
 <p>You need to set the configuration of Net2Ftp manually that will suit your needs.</p>
 <p>Files that you can configure in Net2Ftp:<br>
-  1) settings.inc.php<br>
-  2) settings_authorizations.inc.php<br>
-  3) settings_screens.inc.php</p>
+  1) index.php (to set SERVER PROTOCOL if using standard HTTP or secure HTTPS in line:31)
+  2) settings.inc.php<br>
+  3) settings_authorizations.inc.php<br>
+  4) settings_screens.inc.php</p>
 <p>Please see also Net2Ftp README file for more setting options</p>
 <hr>
 <p>To add this module in your Sentora for a test, use the following<br>
