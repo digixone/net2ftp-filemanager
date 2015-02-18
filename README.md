@@ -1,8 +1,7 @@
-# net2ftp-filemanager
+# net2ftp-filemanager Version 0.1
 
-  Net2Ftp modules allows you to connect to your FTP and manage files on broswer.
-  Version 0.1
-<br>
+Net2Ftp modules allows you to connect to your FTP and manage files on browser.
+<br><br>
 The module uses the latest stable Net2Ftp full version 1.0 that contains all plugins. Version 1.0 is released in March 2013.
 <br><br>
 See Net2Ftp Version 1.0 ChangeLog: http://www.net2ftp.com/download/_CHANGES_v1.0.txt
