@@ -1,10 +1,10 @@
 <updateserver>
-<latestversion>100</latestversion>
+<latestversion>110</latestversion>
 <desc>Net2Ftp module allows you to connect to your FTP and manage files on browser.</desc>
 <updatedesc>Update.</updatedesc>
 <authorname>JD1pinoy</authorname>
 <authoremail>jd1pinoy@gmx.ph</authoremail>
 <authorurl>http://dossierbox.cu.cc</authorurl>
-<downloadurl>http://dossierbox.cu.cc/filebox/zpp/server_logwatch.zpp</downloadurl>
+<downloadurl>http://dossierbox.cu.cc/filebox/zpp/net2ftp-filemanager.zpp</downloadurl>
 <ostype>lin</ostype>
 </updateserver>
