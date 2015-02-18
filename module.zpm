@@ -16,7 +16,7 @@
 onclick="window.open('/modules/net2ftp-filemanager/net2ftp_main/index.php')">
 </form>
 <br /><br />
-<a href="#" id="toggle-b" onclick="toggle_visibility('1')" border="0" style="text-decoration: none; outline:none;"><: Click here to see: <strong>Current Domain List</strong> :></a>
+<a href="#" id="toggle-b" onclick="toggle_visibility('1')" border="0" style="text-decoration: none; outline:none;">Click here to see: <strong>Current Domain List</strong></a>
 <!-- BEGIN DOMAININFO -->
     <div id="toggle-a"class="tab-pane" id="domain">
         <# ui_tpl_clientdomains #>
