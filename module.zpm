@@ -11,21 +11,33 @@
     </div>
 
 <div class="net2ftp-desc"><h2>NET2FTP and FTP Accounts</h2></div>
-<!--<div class="net2ftp-button"><button class="button-loader btn btn-primary" id="btn_sh" onclick="window.open('/modules/net2ftp-filemanager/net2ftp_main/')"><: Launch Net2FTP :></div>-->
-<button class="fg-button ui-state-default ui-corner-all" type="submit" id="jd1pinoy-net2ftp"><: Launch Net2Ftp :></button>
-<script>
-function init() {
-	document.getElementById('jd1pinoy-net2ftp').onclick=function()
-	{
-		ZPanel_AjaXplorer = window.open('/modules/net2ftp-filemanager/net2ftp_main/index.php');
-	};	
-}
-
-window.onload=init;
-
+<form>
+<input type="button" value="Launch Net2Ftp"
+onclick="window.open('/modules/net2ftp-filemanager/net2ftp_main/index.php')">
+</form>
+<br /><br />
+<a href="#" id="toggle-b" onclick="toggle_visibility('1')" border="0" style="text-decoration: none; outline:none;"><: Click here to see: <strong>Current Domain List</strong> :></a>
+<!-- BEGIN DOMAININFO -->
+    <div id="toggle-a"class="tab-pane" id="domain">
+        <# ui_tpl_clientdomains #>
+    </div>
+<script type="text/javascript">
+        $(document).ready(function() { 
+		$("#toggle-a").hide();
+		$("#toggle-b").click(function(){
+        if ($("#toggle-a").is(":visible")) {
+        $("#toggle-a").slideUp("fast");
+        $(this).addClass("active");
+        return false;
+			} else {
+        $("#toggle-a").slideDown("fast");
+                $(this).removeClass("active");
+								return false;
+                            }
+                        }); 
+                    })
 </script>
-<br />
-<p>Launch Net2Ftp file management, make sure you have setup the right FTP account for your domain name.</p>
+<!-- END DOMAININFO -->
 <br />
 <hr>
 <!-- INTEGRATED CODE FROM FTP MANAGER -->
