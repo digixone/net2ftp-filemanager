@@ -6,7 +6,7 @@ The module uses the latest stable Net2Ftp full version 1.0 that contains all plu
 <br><br>
 See Net2Ftp Version 1.0 ChangeLog: http://www.net2ftp.com/download/_CHANGES_v1.0.txt
 <br>
-<p><strong>TAKE NOTE:</strong> module is still in Alpha test and it is not fully integrated to Sentora or ZPanel panel.<br>
+<p><strong><br>
 Feel free to part or modify this for your personal settings and view as long as you don't<br>
 break any Sentora codes inside module.<br>
 REMINDER: Kindly leave the Net2Ftp and Sentora copyrights.
